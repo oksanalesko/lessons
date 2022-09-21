@@ -1,0 +1,195 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+   font-family: 'Lato', sans-serif;
+   line-height: 1.6;
+   color: #424551;
+}
+.wrapper {
+   padding: 45px 0px;
+}
+.container {
+   max-width: 840px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+.header {
+   margin-bottom: 90px;
+}
+.header-title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 1.3;
+   color: #1E212C;
+}
+.main-container {
+   border-bottom: 5px solid #1E212C;
+}
+.main-image {
+   margin-bottom: 60px;
+}
+.main-image img {
+   max-width: 100%;
+}
+.about-subtitle {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #1E212C;
+   margin-bottom: 24px;
+}
+.about-text {
+   margin-bottom: 48px;
+}
+.text > .first {
+   margin-bottom: 35px;
+}
+.main-review {
+   padding-left: 58px;
+   margin-bottom: 48px;
+}
+.review-subtitle {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #1E212C;
+}
+.why {
+   margin-bottom: 20px;
+}
+.why-text {
+   margin-bottom: 24px;
+}
+.why-item {
+   padding-left: 32px;
+   margin-bottom: 4px;
+}
+.footer-text {
+   margin-bottom: 60px;
+}
+/* =============================== */
+.experiments-part {
+   padding: 25px 0px;
+}
+.experiments-content {
+   min-width: 320px;
+   min-height: 900px;
+   border: 3px solid slategrey;
+   padding: 25px;
+   margin-bottom: 25px;
+}
+.experiments-title {
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 1.3;
+   color: #1E212C;
+   text-align: center;
+   padding: 15px 0px;
+   margin-bottom: 25px;
+   background-color: aquamarine;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.experiments-text {
+   max-width: 500px;
+   max-height: 100px;
+   overflow: auto;
+   background-color: rgba(200, 236, 70, 0.616);
+   border: 5px double darkviolet;
+   border-bottom: none;
+   margin-bottom: 30px;
+}
+.experiments-items {
+   font-size: 0;
+   margin-bottom: 30px;
+}
+.experiments-item {
+   padding: 10px;
+   border: 2px dashed rgba(0, 128, 0, 0.555);
+   border-radius: 25px;
+   background-color: rgba(130, 199, 130, 0.514);
+   font-size: 25px;
+}
+.experiments-block {
+   margin-bottom: 30px;
+   background-color: rgba(216, 76, 76, 0.521);
+   border: 2px solid #1E212C;
+   border-radius: 25px 10px;
+   visibility: hidden;
+}
+.experiments-inline {
+   border: 2px dotted darkblue;
+   display: block;
+   background-color: rgba(245, 141, 210, 0.904);
+   border-radius: 100px 20px 50px 14px;
+   overflow: hidden;
+}
+.experiments-image {
+   display: inline-block;
+   border-radius: 50%;
+   padding: 20px;
+   outline: 2px solid salmon;
+   box-shadow:-87px -37px 87px -39px rgba(32,28,212,0.44), 35px 32px 43px -21px rgba(212,28,194,0.66);
+   margin: 35px;
+   opacity: 0.5;
+}
+.experiments-p {
+   border: 2px dashed rgba(0, 128, 0, 0.555);
+   border-radius: 25px;
+   background-color: rgba(130, 199, 130, 0.514);
+   display: none;
+}
+.experiments-link {
+   display: inline-block;
+   font-size: 25px;
+   font-weight: 700;
+   margin-bottom: 30px;
+}
+.experiments-link:focus {
+   outline: 10px solid #4245518f;
+}
+.experiments-circle {
+   margin-bottom: 40px;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   opacity: 0.5;
+   box-shadow: 118px 3px 53px -17px rgba(245,219,0,0.67), inset 20px 20px 100px 25px rgba(9, 65, 168, 0.699), inset -20px -20px 100px 50px rgb(244, 248, 3);
+}
+.experiments-button {
+   display: inline-block;
+   background-color: rgba(241, 33, 130, 0.781);
+   padding: 20px 40px;
+   font-size: 25px;
+   color: azure;
+   border-radius: 30px;
+   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.555);
+   transition: all 0.5s ease 0s;
+}
+.experiments-button:hover {
+   margin-top: 3px;
+   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.555);
+}
+.back-top {
+   display: inline-block;
+   background-color: rgba(33, 199, 241, 0.781);
+   padding: 20px 40px;
+   font-size: 25px;
+   color: azure;
+   border-radius: 30px;
+   margin-bottom: 30px;
+   margin-right: 30px;
+}
+.back-experiments {
+   display: inline-block;
+   background-color: rgba(123, 33, 241, 0.781);
+   padding: 20px 30px;
+   font-size: 25px;
+   color: azure;
+   border-radius: 30px;
+   margin-bottom: 30px;
+}
+.footer-text {
+   text-align: center;
+}
