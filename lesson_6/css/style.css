@@ -134,6 +134,9 @@ body {
    margin: 35px;
    opacity: 0.5;
 }
+.experiments-image img {
+   max-width: 100%;
+}
 .experiments-p {
    border: 2px dashed rgba(0, 128, 0, 0.555);
    border-radius: 25px;
