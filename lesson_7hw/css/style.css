@@ -1,0 +1,133 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap');
+@font-face {
+   font-family: 'Vinnytsia Sans';
+   src: url('../fonts/VinnytsiaSans-Regular.woff2') format('woff2'),
+      url('../fonts/VinnytsiaSans-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Vinnytsia Sans';
+   src: url('../fonts/VinnytsiaSans-Bold.woff2') format('woff2'),
+      url('../fonts/VinnytsiaSans-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+/* ===================================== */
+[class*="__container"] {
+   max-width: 1246px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+body {
+   font-family: 'Nunito', sans-serif;
+   font-size: 24px;
+   line-height: 1.3;
+   color: #000000;
+}
+/* ====================================== */
+.header {
+   padding: 75px 0px 75px 0px;
+   background: url('../img/icons/tomato_icon.png') top left repeat-x fixed, url('../img/icons/tomato_icon.png') bottom left repeat-x;
+}
+.header-title {
+   font-family: 'Vinnytsia Sans';
+   font-weight: 700;
+   font-size: 54px;
+   text-align: center;
+   color: rgb(216, 12, 12);
+   text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+/* ========================================== */
+.main {
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#214aa8+0,f4dd30+100&0.6+0,1+100 */
+   background: -moz-linear-gradient(top,  rgba(33,74,168,0.6) 0%, rgba(244,221,48,1) 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top,  rgba(33,74,168,0.6) 0%,rgba(244,221,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom,  rgba(33,74,168,0.6) 0%,rgba(244,221,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99214aa8', endColorstr='#f4dd30',GradientType=0 ); /* IE6-9 */
+}
+.main__container {
+   padding: 40px 0;
+}
+.main-title,
+.main-subtitle {
+   font-family: 'Vinnytsia Sans';
+   font-size: 35px;
+   text-align: center;
+   border-radius: 30px;
+   padding: 15px 0;
+   margin-bottom: 30px;
+}
+.main-title {
+   font-weight: 700;
+   box-shadow: 10px 14px 26px 8px rgba(232,17,17,0.64);
+   -webkit-box-shadow: 10px 14px 26px 8px rgba(232,17,17,0.64);
+   -moz-box-shadow: 10px 14px 26px 8px rgba(232,17,17,0.64);
+}
+.main-subtitle {
+   box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
+   -webkit-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
+   -moz-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
+}
+.content-text {
+   padding: 0px 20px;
+   background: url('../img/10.png') 50% / cover no-repeat;
+}
+.content-text span {
+   font-style: italic;
+}
+.main-list {
+   margin-bottom: 25px;
+}
+.main-list li {
+   padding: 0px 0px 0px 55px;
+   text-align: justify;
+   margin-bottom: 20px;
+   background: url('../img/icons/tomato_icon.png') left 5px/32px 32px no-repeat;
+}
+.main-text {
+   margin-bottom: 20px;
+}
+.main-text > p {
+   text-indent: 20px;
+   margin-bottom: 15px;
+   text-align: justify;
+}
+.button-top {
+   text-align: center;
+}
+.button-top a {
+   display: inline-block;
+   box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
+   -webkit-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
+   -moz-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
+   padding: 20px 30px;
+   background-color: rgba(233, 12, 12, 0.562);
+   color: #fff;
+   font-family: 'Vinnytsia Sans';
+   font-weight: 700;
+   font-style: 30px;
+   border-radius: 25px;
+}
+.main-images {
+   margin-bottom: 40px;
+}
+.block-images img {
+   max-width: 23%;
+}
+/* =========================================== */
+.footer {
+   padding: 75px 0px 75px 0px;
+   background: url('../img/icons/tomato_icon.png') top left repeat-x, url('../img/icons/tomato_icon.png') bottom left repeat-x;
+}
+.footer-text {
+   font-family: 'Vinnytsia Sans';
+   font-weight: 400;
+   font-size: 30px;
+   text-align: center;
+   color: #121212;
+   text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
