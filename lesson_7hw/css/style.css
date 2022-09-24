@@ -47,7 +47,6 @@ body {
    background: -moz-linear-gradient(top,  rgba(33,74,168,0.6) 0%, rgba(244,221,48,1) 100%); /* FF3.6-15 */
    background: -webkit-linear-gradient(top,  rgba(33,74,168,0.6) 0%,rgba(244,221,48,1) 100%); /* Chrome10-25,Safari5.1-6 */
    background: linear-gradient(to bottom,  rgba(33,74,168,0.6) 0%,rgba(244,221,48,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99214aa8', endColorstr='#f4dd30',GradientType=0 ); /* IE6-9 */
 }
 .main__container {
    padding: 40px 0;
@@ -64,13 +63,9 @@ body {
 .main-title {
    font-weight: 700;
    box-shadow: 10px 14px 26px 8px rgba(232,17,17,0.64);
-   -webkit-box-shadow: 10px 14px 26px 8px rgba(232,17,17,0.64);
-   -moz-box-shadow: 10px 14px 26px 8px rgba(232,17,17,0.64);
 }
 .main-subtitle {
    box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
-   -webkit-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
-   -moz-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
 }
 .content-text {
    padding: 0px 20px;
@@ -102,14 +97,12 @@ body {
 .button-top a {
    display: inline-block;
    box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
-   -webkit-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
-   -moz-box-shadow: 10px 14px 26px 8px rgba(29,120,28,0.64);
    padding: 20px 30px;
    background-color: rgba(233, 12, 12, 0.562);
    color: #fff;
    font-family: 'Vinnytsia Sans';
    font-weight: 700;
-   font-style: 30px;
+   font-size: 30px;
    border-radius: 25px;
 }
 .main-images {
