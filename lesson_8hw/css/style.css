@@ -310,6 +310,189 @@ body {
    display: inline-block;
 }
 /* ========================================= */
+.page-game2 {
+   background: linear-gradient(to bottom, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%);
+}
+.game2__container {
+   padding: 30px;
+   background: url("../img/background.jpg");
+   border: 2px solid rgb(32, 159, 218);
+   border-radius: 30px;
+   font-size: 0;
+}
+.game2-block1 {
+   display: inline-block;
+   width: 110px;
+   height: 65px;
+   background-color: rgba(241, 219, 54, 0.795);
+   border-radius: 20px 10px 10px 20px;
+   border: 2px solid rgb(247, 218, 3);
+   text-align: center;
+   font-size: 36px;
+   font-weight: 900;
+}
+.game2-block1:hover,
+.game2-block1:hover + .game2-block2 {
+   visibility: visible;
+   opacity: 1;
+}
+.game2-block2 {
+   display: inline-block;
+   width: 65px;
+   height: 335px;
+   background-color: rgba(113, 241, 54, 0.795);
+   border-radius: 20px 10px 20px 10px;
+   border: 2px solid rgb(247, 218, 3);
+   vertical-align: top;
+   color: #1E212C;
+   font-size: 36px;
+   font-weight: 900;
+   text-align: center;
+   line-height: 10;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block2:hover,
+.game2-block2:hover + .game2-block3 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block3 {
+   display: inline-block;
+   width: 250px;
+   height: 65px;
+   background-color: rgba(54, 197, 241, 0.795);
+   border-radius: 10px;
+   border: 2px solid rgb(247, 218, 3);
+   vertical-align: top;
+   color: #1E212C;
+   font-size: 36px;
+   font-weight: 900;
+   text-align: center;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block3:hover,
+.game2-block3:hover + .game2-block4 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block4 {
+   display: inline-block;
+   width: 45px;
+   height: 600px;
+   background-color: rgba(241, 138, 54, 0.795);
+   border-radius: 10px 20px 10px 20px;
+   border: 2px solid rgb(247, 218, 3);
+   vertical-align: top;
+   color: #1E212C;
+   font-size: 36px;
+   font-weight: 900;
+   text-align: center;
+   line-height: 17;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block4:hover,
+.game2-block4:hover + .game2-block5 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block5 {
+   display: inline-block;
+   vertical-align: bottom;
+   width: 250px;
+   height: 45px;
+   background-color: rgba(166, 54, 241, 0.795);
+   border-radius: 10px;
+   border: 2px solid rgb(247, 218, 3);
+   font-size: 30px;
+   font-weight: 900;
+   text-align: center;
+   line-height: 0.9;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block5:hover,
+.game2-block5:hover + .game2-block6 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block6 {
+   display: inline-block;
+   vertical-align: bottom;
+   width: 25px;
+   height: 300px;
+   background-color: rgba(54, 241, 169, 0.795);
+   border-radius: 20px 10px 20px 10px;
+   border: 2px solid rgb(247, 218, 3);
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 15;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block6:hover,
+.game2-block6:hover + .game2-block7 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block7 {
+   display: inline-block;
+   margin-top: 300px;
+   width: 325px;
+   height: 25px;
+   background-color: rgba(241, 54, 101, 0.795);
+   border-radius: 10px;
+   border: 2px solid rgb(247, 218, 3);
+   font-size: 20px;
+   font-weight: 900;
+   line-height: 0.5;
+   text-align: center;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block7:hover,
+.game2-block7:hover + .game2-block8 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block8 {
+   display: inline-block;
+   vertical-align: bottom;
+   width: 15px;
+   height: 300px;
+   background-color: rgba(70, 241, 54, 0.795);
+   border-radius: 10px 20px 10px 20px;
+   border: 2px solid rgb(247, 218, 3);
+   font-size: 14px;
+   font-weight: 900;
+   line-height: 22;
+   text-align: center;
+   opacity: 0;
+   visibility: hidden;
+}
+.game2-block8:hover,
+.game2-block8:hover + .game2-block9 {
+   opacity: 1;
+   visibility: visible;
+}
+.game2-block9 {
+   display: inline-block;
+   width: 110px;
+   height: 65px;
+   background-color: rgba(209, 245, 9, 0.795);
+   border-radius: 10px 20px 20px 10px;
+   border: 2px solid rgb(247, 218, 3);
+   text-align: center;
+   color: #1E212C;
+   font-size: 36px;
+   font-weight: 900;
+   vertical-align: bottom;
+   opacity: 0;
+   visibility: hidden;
+}
+/* ========================================= */
 .nav-buttons {
    padding: 25px 0px;
    margin-bottom: 30px;
@@ -327,7 +510,8 @@ body {
 .link-top,
 .link-maket,
 .link-exercises,
-.link-game {
+.link-game,
+.link-game2 {
    display: inline-block;
    padding: 15px 20px;
    border-radius: 20px;
