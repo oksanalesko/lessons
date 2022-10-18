@@ -1,0 +1,197 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;600;800&display=swap');
+
+/* =============================================== */
+body {
+   font-family: 'Kanit', sans-serif;
+   font-size: 24px;
+   font-weight: 300;
+   color: darkcyan;
+   line-height: 1.3;
+}
+.wrapper {
+   position: relative;
+   min-height: 100%;
+   overflow: hidden;
+   background: url("../img/back.jpg") 0 0 / 200px 200px repeat fixed;
+}
+[class*="__container"] {
+   max-width: 800px;
+   margin: 0 auto;
+}
+/* =============================================== */
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-image: url("../img/14710.jpg");
+   background-size: contain;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   z-index: 100;
+}
+.header__content {
+   display: inline-block;
+   margin-right: 15%;
+}
+.header__content > :not(:last-child) {
+   margin-bottom: 20px;
+}
+.header__title {
+   font-size: 45px;
+   font-weight: 800;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+.header__subtitle {
+   font-size: 32px;
+   font-weight: 600;
+   line-height: 1.6;
+   letter-spacing: 2px;
+}
+.header__button {
+   display: inline-block;
+}
+.header__link {
+   padding: 10px 25px;
+   background-color: darkcyan;
+   color: aliceblue;
+   border-radius: 10px;
+   display: inline-block;
+   transform: skewX(-20deg);
+   margin-bottom: 10px;
+}
+.header__link:hover {
+   background-color: rgb(1, 66, 66);
+   transform: scale(1.2) skewX(-20deg);
+   transition: all 0.3s ease 0s;
+}
+/* =============================================== */
+.main {
+   margin-top: 193px;
+}
+.main__container {
+   position: relative;
+}
+.main__container::after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+   width: 60%;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 0;
+   bottom: 0;
+   border-left: 5px dotted darkcyan;
+   border-right: 5px dotted darkcyan;
+}
+.main__container .main__pic:not(:last-child) {
+   margin-bottom: 30px;
+}
+.main__image {
+   padding: 20px 20px 0px 20px;
+}
+.main__image img {
+   max-width: 100%;
+   border-radius: 15%;
+   border: 1px solid rgba(236, 122, 202);
+}
+.main__image--1 {
+   background-color: rgba(236, 122, 202, 0.5);
+}
+.main__image--1:hover img {
+   transform: translate(50px, 30px) skew(15deg, -15deg);
+   transition: all 1s ease 0s;
+}
+.main__image--2 {
+   background-color: rgb(184, 196, 23, 0.5);
+}
+.main__image--2:hover img {
+   transform: scale(0.5) rotate(45deg);
+   transition: all 1s ease 0s;
+}
+.main__image--3 {
+   background-color: rgb(73, 168, 223, 0.5);
+}
+.main__image--3:hover img {
+   transform-origin: right;
+   transform: scaleY(0.7) rotate(360deg);
+   transition: all 2s ease 0s;
+}
+.main__image--4 {
+   background-color: rgb(236, 122, 202, 0.5);
+   perspective: 500px;
+   perspective-origin: center;
+}
+.main__image--4:hover img {
+   transform: rotateX(60deg);
+   transition: all 2s ease 0s;
+}
+.main__image--5 {
+   background-color: rgb(100, 87, 96, 0.5);
+   overflow: hidden;
+}
+.main__image--5 img {
+   transform: scale(0);
+}
+.main__image--5:hover img {
+   transform: scale(1);
+   transition: all 2s ease 0s;
+}
+.main__image--6 {
+   background-color: rgb(184, 196, 23, 0.5);
+   position: relative;
+   perspective: 400;
+   transform-style: flat;
+}
+.main__image--6::after {
+   content: url(../img/icons/icons96.png);
+   position: absolute;
+   top: 75px;
+   left: 300px;
+   transform: scale(3) rotate(-45deg);
+   transition: all 1s ease 0s;
+}
+.main__image--6:hover::after {
+   transform: scale(3) rotate(-90deg);
+   transition: all 1s ease 0s;
+}
+.main__image--6 img {
+   transform: rotateY(180deg);
+   transition: all 1s ease 0s;
+}
+.main__image--6:hover img {
+   transform: rotateY(0deg);
+}
+.main__link {
+   font-size: 16px;
+   line-height: 1.7;
+   padding: 0px 10px;
+}
+.main__link:hover {
+   border: 1px solid darkcyan;
+   border-radius: 10px;
+}
+/* =============================================== */
+.footer {
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   background-image: url("../img/14710.jpg");
+   background-size: contain;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   z-index: 100;
+}
+.footer__container {
+}
+.footer__copy {
+   text-align: center;
+   letter-spacing: 2px;
+}
+.footer__text {
+}
+/* =============================================== */
+/* =============================================== */
