@@ -142,7 +142,7 @@ body {
 .main__image--6 {
    background-color: rgb(184, 196, 23, 0.5);
    position: relative;
-   perspective: 400px;
+   perspective: 800px;
    transform-style: flat;
 }
 .main__image--6::after {
