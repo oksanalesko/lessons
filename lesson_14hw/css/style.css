@@ -131,8 +131,6 @@ body {
    background: linear-gradient(0deg, rgba(137,230,165,0.7) 0%,rgba(174,97,228,0.7) 100%);
    padding: 130px 0px;
 }
-.main__container {
-}
 .main__block {
    margin-bottom: 50px;
 }
@@ -370,14 +368,11 @@ body {
 .example-3 {
    max-width: 900px;
    margin: 0 auto;
-
 }
 .example-3__bodies {
    display: flex;
    flex-direction: column;
    row-gap: 30px;
-}
-.bodies-example {
 }
 .bodies-example__body {
    display: flex;
@@ -391,7 +386,6 @@ body {
 .bodies-example__image {
    flex: 0 0 50%;
    padding: 0 15px;
-   
    overflow: hidden;
 }
 .bodies-example__image img {
