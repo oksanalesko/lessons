@@ -250,6 +250,11 @@ body {
    font-weight: 700;
    font-size: 14px;
    color: #787A80;
+   transition: color 0.3s ease 0s;
+}
+.contacts__label:hover + .contacts__text {
+   color: #FF3F3A;
+   transition: color 0.3s ease 0s;
 }
 .contacts__text {
    font-size: 18px;
