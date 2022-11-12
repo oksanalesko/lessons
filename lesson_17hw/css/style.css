@@ -633,6 +633,8 @@ body {
 }
 .card__media {
    flex: 0 1 35.666667%; /* 214/600 */
+   border-radius: 4px;
+   overflow: hidden;
 }
 .card__image {
    position: relative;
