@@ -111,6 +111,13 @@ body {
   min-width: 0;
 }
 
+/*
+(i) Стилі будуть застосовуватись до
+всіх класів, що містять *__container
+Наприклад header__container, main__container і т.п.
+Сніппет (HTML): cnt
+*/
+
 [class*=__container] {
   max-width: 75.625rem;
   margin: 0 auto;
@@ -463,6 +470,18 @@ body {
 .hero {
   position: relative;
   z-index: 2;
+  min-height: 100vh;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__container {
@@ -474,7 +493,6 @@ body {
   line-height: 1.5;
   font-weight: 600;
   max-width: 51.25rem;
-  margin: 0 auto;
   text-transform: capitalize;
 }
 
@@ -482,7 +500,6 @@ body {
   font-weight: 500;
   font-size: 1.5rem;
   max-width: 49rem;
-  margin: 0 auto;
 }
 
 .search {
@@ -767,6 +784,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40%;
           flex: 0 1 40%;
+  /* 480/1180 */
   position: relative;
 }
 
@@ -789,6 +807,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 49%;
           flex: 0 1 49%;
+  /* 580/1180 */
 }
 
 .contact-us__content > *:not(:last-child) {
@@ -824,17 +843,23 @@ body {
 
 .progress__item:nth-child(1) {
   top: 47%;
+  /* 377/800 */
   left: -20%;
+  /* -94/480 */
 }
 
 .progress__item:nth-child(2) {
   top: 7%;
+  /* 56/800 */
   right: -21%;
+  /* -100/480 */
 }
 
 .progress__item:nth-child(3) {
   bottom: 18%;
+  /* 143/800 */
   right: -19%;
+  /* -93/480 */
 }
 
 .progress__value {
@@ -896,7 +921,9 @@ body {
   position: absolute;
   z-index: 3;
   top: 7%;
+  /* 14/200 */
   right: 8%;
+  /* 24/280 */
 }
 
 .card-recommendations__content {
@@ -1057,6 +1084,7 @@ body {
 
 .author__avatar img {
   max-width: 100%;
+  height: 100%;
 }
 
 .author__rating {
@@ -1183,14 +1211,6 @@ body {
     font-size: 3rem;
   }
 
-  .hero {
-    padding-top: 19.375rem;
-  }
-
-  .hero {
-    padding-bottom: 18.125rem;
-  }
-
   .hero__title {
     font-size: 4rem;
   }
@@ -1313,14 +1333,6 @@ body {
 
   .footer {
     padding-bottom: 1.875rem;
-  }
-
-  .hero {
-    padding-top: 6.25rem;
-  }
-
-  .hero {
-    padding-bottom: 6.25rem;
   }
 
   .hero__title {
@@ -1741,30 +1753,6 @@ body {
 @supports not (font-size: clamp( 1.75rem , 1.3005617978rem  +  2.2471910112vw , 3rem )) {
     .title {
       font-size: calc(1.75rem + 1.25 * (100vw - 20rem) / 55.625);
-    }
-}
-
-@supports (padding-top: clamp( 6.25rem , 1.5308988764rem  +  23.595505618vw , 19.375rem )) {
-    .hero {
-      padding-top: clamp( 6.25rem , 1.5308988764rem  +  23.595505618vw , 19.375rem );
-    }
-}
-
-@supports not (padding-top: clamp( 6.25rem , 1.5308988764rem  +  23.595505618vw , 19.375rem )) {
-    .hero {
-      padding-top: calc(6.25rem + 13.125 * (100vw - 20rem) / 55.625);
-    }
-}
-
-@supports (padding-bottom: clamp( 6.25rem , 1.9803370787rem  +  21.3483146067vw , 18.125rem )) {
-    .hero {
-      padding-bottom: clamp( 6.25rem , 1.9803370787rem  +  21.3483146067vw , 18.125rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 6.25rem , 1.9803370787rem  +  21.3483146067vw , 18.125rem )) {
-    .hero {
-      padding-bottom: calc(6.25rem + 11.875 * (100vw - 20rem) / 55.625);
     }
 }
 
