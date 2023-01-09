@@ -1,0 +1,160 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   position: relative;
+   overflow: hidden;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+body {
+   font-family: 'Sniglet', cursive;
+   font-size: 1.25rem;
+   color: #363636;
+   line-height: 1.5;
+}
+/* ================================================== */
+.header {
+   height: 18vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   position: fixed;
+   z-index: 50;
+   width: 100%;
+   background-color: #FFC0C0;
+   border-radius: 30px;
+   transition: transform 0.5s ease 0s;
+}
+.header:hover .header__title {
+   transform: translateX(5px) scale(1.02);
+   transition: transform 0.5s ease 0s;
+}
+.header__container {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+.header__logo {
+   flex: 0 0 64px;
+   transform: scale(1);
+   animation: heart-scale 1s ease infinite  alternate forwards;
+}
+@keyframes heart-scale {
+   0% {
+      transform: scale(1.1);
+   }
+   100% {
+      transform: scale(0.8);
+   }
+}
+.header__logo img {
+   max-width: 100%;
+}
+.header__title {
+   text-align: center;
+   font-size: 56px;
+   font-weight: 800;
+   background: linear-gradient(93.51deg, #9B51E0 2.84%, #ed309e 99.18%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   /* color: #FF8585;
+   text-shadow: 5px 5px 4px rgba(255, 255, 255, 0.6); */
+   white-space: nowrap;
+   transition: transform 0.5s ease 0s;
+   will-change: transform;
+}
+@media(max-width:767.98px) {
+   .header__title {
+      font-size: 36px;
+      white-space: normal;
+   }
+}
+/* ================================================== */
+.page {
+   padding-top: 19vh;
+   padding-bottom: 15vh;
+}
+.lesson-block {
+   background-color: #fce2e2;
+   border-radius: 30px;
+   padding: 20px;
+   margin-bottom: 30px;
+}
+.lesson__task:not(:last-child) {
+   margin-bottom: 20px;
+}
+.lesson__title {
+   color: #FF8585;
+   font-size: 36px;
+   font-weight: 800;
+   text-align: center;
+}
+.lesson__title:not(:last-child) {
+   margin-bottom: 20px;
+}
+.lesson__tasks {
+   padding-left: 30px;
+}
+.lesson__task {
+   color: #FF8585;
+   font-size: 24px;
+}
+
+.lesson__items {
+   padding-left: 50px;
+   font-size: 20px;
+   color: #525252;
+   /* min-width: 0; */
+}
+/* .lesson__item {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+} */
+.lesson__item:not(:last-child) {
+   margin-bottom: 20px;
+}
+.lesson__item span {
+   color: transparent;
+}
+/* ================================================== */
+.footer {
+   height: 15vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px 0;
+   position: fixed;
+   bottom: 0;
+   z-index: 25;
+   width: 100%;
+   background-color: #FFC0C0;
+   border-radius: 30px;
+}
+.footer__copy {
+   font-size: 22px;
+   font-weight: 800;
+   background: linear-gradient(93.51deg, #9B51E0 2.84%, #ed309e 99.18%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   /* color: #FF8585;
+   text-shadow: 5px 5px 4px rgba(255, 255, 255, 0.6); */
+   text-align: center;
+}
+@media(max-width:610px) {
+   .footer__copy {
+      font-size: 18px;
+   }
+}
+/* ================================================== */
