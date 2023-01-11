@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <title>Lesson 23 JAVASCRIPT Homework</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__logo">
+               <img src="img/heart.png" alt="">
+            </div>
+            <h1 class="header__title">JAVASCRIPT Homework</h1>
+         </div>
+      </header>
+      <main class="page">
+         <div class="page__container">
+            <div class="lesson-block">
+               <h2 class="lesson__title">Lesson 23</h2>
+               <ul class="lesson__tasks">
+                  <li class="lesson__task">Video 1 (Операторьі JAVASCRIPT)
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - false (оператор "+" не переводить тип даних)</li>
+                        <li class="lesson__item">Version 2 - true (оператор "*" переводить тип даних у number)</li>
+                        <li class="lesson__item">Version 3 - false (інкремент "++" працює тільки зі змінними)</li>
+                        <li class="lesson__item">Version 4 - false (у консоль виводиться попереднє значення змінної, до того, як почати вичисленння, тому що використовується інкремент у суфіксній формі)</li>
+                        <li class="lesson__item">Version 5 - false (найвищий приорітет у оператора "!", тому спочатку переводиться у протилежні значення з "!", потім застосовується оператор "&&", який має вищий приорітет за "||", а вже потім оператор "||" шукає перше true та повертає його значення)</li>
+                        <li class="lesson__item">Version 6 - true? (сумніваюся, бо з одного боку, відсутні ";" (але так можна, коли в один рядок), а з другого - оскільки перше значення не null/undefined, то повертається воно)</li>
+                     </ul>
+                  </li>
+                  <li class="lesson__task">Video 2 (IF ELSE в JAVASCRIPT. Условньій оператор "?")
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - умова не виконується (число 1 не дорівнює жорстко рядку "1")</li>
+                        <li class="lesson__item">Version 2 - умова виконується (число 5 дорівнює рядку "1")</li>
+                        <li class="lesson__item">Version 3 - умова виконується (92 більше '11' (оператор ">" переводить тип даних), 58 менше 100, оператор "&&" повертає значення останнього true)</li>
+                        <li class="lesson__item">Version 4 - перша умова не виконується, друга умова виконується (0 повертає false, пробіл повертає true)</li>
+                     </ul>
+                  </li>
+                  <li class="lesson__task">Video 3 (Цикльі FOR и WHILE в JAVASCRIPT. Директивьі break и continue)
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 2 - false (невірно, тому що коли значення змінної стає "0", це вже false і код не виконується)</li>
+                     </ul>
+                  </li>
+                  <li class="lesson__task">Video 5 (Строки в JAVASCRIPT. Тип даних string.)
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - false (невірно, тому що повинні бути зворотні лапки "``" для вставки довільного виразу)</li>
+                        <li class="lesson__item">Version 3 - false (невірно, тому що оператор "+" не переводить тип даних у number. Щоб отримати 579, треба перевести рядок "456" у тип даних number, наприклад, за допомогою унарного оператора "+")</li>
+                        <li class="lesson__item">Version 6 - false (невірно, тому що підрядок 'лан' починається з 3, починаючи з 4 його нема)</li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__copy">
+               <p>Homework 23 by Oksana Lesko &#169;</p>
+               <p>All right reserved  2023</p>
+            </div>
+         </div>
+      </footer>
+      </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
