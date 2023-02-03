@@ -91,7 +91,6 @@ console.log(users);
 // console.log(users);
 let removed = users.splice(0, 1);
 console.log(removed);
-// users.unshift('Маша', 'Паша');
 users.unshift('Маша', 'Паша');
 console.log(users);
 
