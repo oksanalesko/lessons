@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <title>Lesson 24 JAVASCRIPT Homework</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__logo">
+               <img src="img/heart.png" alt="">
+            </div>
+            <h1 class="header__title">JAVASCRIPT Homework</h1>
+         </div>
+      </header>
+      <main class="page">
+         <div class="page__container">
+            <figure class="page__video video">
+               <video controls preload="auto" poster="img/video-poster.png" class="video__item">
+                  <source src="videos/kola.webm" type="video/webm">
+                  <source src="videos/kola.mp4" type="video/mp4">
+               </video>
+               <!-- <iframe src="https://www.youtube.com/embed/CSoCoSHyU5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+               <button type="button" class="video__play js-video__play"></button>
+            </figure>
+            <div class="lesson-block">
+               <h2 class="lesson__title">Lesson 24</h2>
+               <ul class="lesson__tasks">
+                  <li class="lesson__task">Video 1 (Функції в JAVASCRIPT)
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - Першим потрапить у консоль "Коля!" (Функція showName викликана з затримкою, хоч і 0)</li>
+                        <li class="lesson__item">Version 2 - true (функція викликана правильно, вона може бути викликана до її об'яви в будь-якому місці)</li>
+                        <li class="lesson__item">Version 3 - false (ні, не вірно. У функціональному виразі функція (або змінна) може бути викликана тільки після її об'яви)</li>
+                        <li class="lesson__item">Version 4 - Щоб вирішити проблему (не виводиться у консоль повідомлення, тому що функція не видна за межами блоку) треба викликати її у межах блоку, <br> або об'явити змінну перед блоком, всередині блоку привласнити змінній функцію, і потім можна викликати або змінну (з дужками), або функцію за межами блоку</li>
+                     </ul>
+                  </li>
+                  <li class="lesson__task">Video 2 (Масиви в JAVASCRIPT)
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - length дорівнює 4 (push додає елемент в кінець масиву, довжина якого була 3)</li>
+                        <li class="lesson__item">Version 2 - :
+                           <ul class="lesson__sublist">
+                              <li class="lesson__subitem">Створюємо масив з елементами "Ваня" та "Іштван":</li>
+                              <li class="lesson__subitem"><code>let users = ['Ваня', 'Іштван'];</code></li>
+                              <li class="lesson__subitem">Додаємо "Оля" в кінець масиву:</li>
+                              <li class="lesson__subitem"><code>users.push('Оля');</code></li>
+                              <li class="lesson__subitem">Змінюємо значення в "Іштван" на "Петя"</li>
+                              <li class="lesson__subitem"><code>let userI = users.indexOf('Іштван');</code></li>
+                              <li class="lesson__subitem"><code>users[1] = 'Петя';</code></li>
+                              <li class="lesson__subitem">Або: <code>users.splice(1, 1, 'Петя');</code></li>
+                              <li class="lesson__subitem">Видаляємо перший елемент масиву та показуємо його:</li>
+                              <li class="lesson__subitem"><code>let removed = users.splice(0, 1);</code></li>
+                              <li class="lesson__subitem"><code>console.log(removed);</code></li>
+                              <li class="lesson__subitem">Додаємо "Маша" та "Паша" на початок масиву (не знаю, як правильно, в мене два варіанти):</li>
+                              <li class="lesson__subitem"><code>users.unshift('Маша', 'Паша');</code></li>
+                              <li class="lesson__subitem">Чи <code>users.unshift('Маша', 'Паша');</code></li>
+                              <li class="lesson__subitem">Виводимо у консоль users:</li>
+                              <li class="lesson__subitem"><code>console.log(users);</code></li>
+                           </ul>
+                        </li>
+                        <li class="lesson__item">Version 3 - 
+                           <ul class="lesson__sublist">
+                              <li class="lesson__subitem">Видалити елемент 'Іштван' та повернути його у змінну:</li>
+                              <li class="lesson__subitem"><code>let arrOne = ['Ваня', 'Іштван', 'Оля'];</code></li>
+                              <li class="lesson__subitem"><code>let deleted = arrOne.splice(1, 1);</code></li>
+                           </ul>
+                        </li>
+                        <li class="lesson__item">Version 4 - Зробити з рядка масив:
+                           <ul class="lesson__sublist">
+                              <li class="lesson__subitem"><code>let str = 'Ваня,Іштван,Оля';</code></li>
+                              <li class="lesson__subitem"><code>let arrTwo = str.split(',');</code></li>
+                              <li class="lesson__subitem"><code>console.log(typeof arrTwo);</code></li>
+                              <li class="lesson__subitem"><code>if (Array.isArray(arrTwo)) {</code></li>
+                              <li class="lesson__subitem"><code>   console.log("Це масив!");</code></li>
+                              <li class="lesson__subitem"><code>} else {</code></li>
+                              <li class="lesson__subitem"><code>   console.log("Це не масив!");</code></li>
+                              <li class="lesson__subitem"><code>}</code></li>
+                           </ul>
+                        </li>
+                        <li class="lesson__item">Version 5 - previousValue на початку роботи методу дорівнює 9 (значення першого елементу), тому що не вказаний initial previousValue</li>
+                     </ul>
+                  </li>
+                  <li class="lesson__task">Video 3 (JAVASCRIPT Document object model (DOM))
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - 
+                           <ul class="lesson__sublist">
+                              <li class="lesson__subitem">
+                                 <div data-say-hi="yes">Привіт!</div>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="lesson__item">Version 2 - 
+                           <ul class="lesson__sublist">
+                              <li class="lesson__subitem">Корчі</li>
+                              <li class="lesson__subitem">Йончі</li>
+                           </ul>
+                        </li>
+                        <li class="lesson__item">Version 3 - 
+                           <div class="like"></div>
+                           <div class="subscribe"></div>
+                           <div class="like subscribe"></div>
+                        </li>
+                        <li class="lesson__item">Version 4 - 
+                           <ul class="lesson__sublist">
+                              <li class="lesson__subitem">"li" не додасться з цим кодом, тому що використаний querySelectorAll, тому отримується колекція і виводиться помилка</li>
+                              <li class="lesson__subitem">Але якщо замість querySelectorAll використати querySelector, то "li" додасться перед кінцем всередині елементу ul</li>
+                           </ul>
+                           <ul class="version4">
+                              <li>Пункт №1</li>
+                              <li>Пункт №2</li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="lesson__task">Video 4 (JAVASCRIPT. Розміри, прокрутка, координати)
+                     <ul class="lesson__items">
+                        <li class="lesson__item">Version 1 - 
+                           <div class="block">
+                              <div class="block__text">
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, culpa nihil. Architecto voluptates in quia laudantium, pariatur dolore molestiae enim saepe suscipit voluptate mollitia dolor delectus voluptatem iste incidunt ut!</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__copy">
+               <p>Homework 24 by Oksana Lesko &#169;</p>
+               <p>All right reserved  2023</p>
+            </div>
+         </div>
+      </footer>
+      </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
