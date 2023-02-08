@@ -84,11 +84,14 @@ users.push('Оля');
 // console.log(users);
 let userI = users.indexOf('Іштван');
 console.log(userI);
-users[1] = 'Петя';
+// if (userI) {
+//    users[userI] = 'Петя';
+// }
+if (userI) {
+   users.splice(userI, 1, 'Петя');
+}
 console.log(users);
-// users.splice(1, 1, 'Петя');
-// users[1] = 'Петя';
-// console.log(users);
+
 let removed = users.splice(0, 1);
 console.log(removed);
 users.unshift('Маша', 'Паша');
@@ -97,8 +100,12 @@ console.log(users);
 // Задача 3
 
 let arrOne = ['Ваня', 'Іштван', 'Оля'];
-let deleted = arrOne.splice(1, 1);
-// console.log(deleted);
+let indexI = arrOne.indexOf('Іштван');
+if (indexI) {
+   let deleted = arrOne.splice(indexI, 1);
+   console.log(deleted);
+}
+
 
 // Задача 4
 
